@@ -1,11 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <Import Project="..\..\common.props" />
   <Import Project="..\..\version.props" />
   <Import Project="..\..\repository_info.props" />
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Riven</RootNamespace>
 
     <PackageId>Riven.Domain.Shared</PackageId>
@@ -15,5 +15,15 @@
     <PackageTags>riven;framework;application framework;domain driven design</PackageTags>
 
   </PropertyGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Framework\src\Riven.Dependency\Riven.Dependency.csproj" />
+    <ProjectReference Include="..\..\..\Framework\src\Riven.Domain\Riven.Domain.csproj" />
+    <ProjectReference Include="..\..\..\Framework\src\Riven.Identity.EntityFrameworkCore\Riven.Identity.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\..\Framework\src\Riven.Identity\Riven.Identity.csproj" />
+    <ProjectReference Include="..\..\..\Framework\src\Riven.Localization\Riven.Localization.csproj" />
+    <ProjectReference Include="..\..\..\Framework\src\Riven.UnitOfWork\Riven.UnitOfWork.csproj" />
+  </ItemGroup>
 
 </Project>
