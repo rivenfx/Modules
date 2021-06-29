@@ -14,17 +14,14 @@ namespace Riven.Authorization
 
         public string TenantName => this._multiTenancyProvider.CurrentTenantNameOrNull();
 
-        public LanguageInfo CurrentLanguage => this._currentLanguage.GetCurrentLanguage();
 
 
         protected readonly ICurrentUser _currentUser;
-        protected readonly ICurrentLanguage _currentLanguage;
         protected readonly IMultiTenancyProvider _multiTenancyProvider;
 
-        public DefaultAppSession(ICurrentUser currentUser, ICurrentLanguage currentLanguage, IMultiTenancyProvider multiTenancyProvider)
+        public DefaultAppSession(ICurrentUser currentUser, IMultiTenancyProvider multiTenancyProvider)
         {
             _currentUser = currentUser;
-            _currentLanguage = currentLanguage;
             _multiTenancyProvider = multiTenancyProvider;
         }
 

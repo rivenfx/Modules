@@ -32,11 +32,6 @@ namespace Riven.Authorization
         string TenantName { get; }
 
         /// <summary>
-        /// 当前语言信息
-        /// </summary>
-        LanguageInfo CurrentLanguage { get; }
-
-        /// <summary>
         /// 指定类型的用户id
         /// </summary>
         /// <typeparam name="T"></typeparam>
