@@ -105,7 +105,7 @@ namespace Riven.Database
                 return default(T);
             }
 
-            return this.ServiceProvider.GetRequiredService<T>();
+            return this.ServiceProvider.GetService<T>();
         }
     }
 
