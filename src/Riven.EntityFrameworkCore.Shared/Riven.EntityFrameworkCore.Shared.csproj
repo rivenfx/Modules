@@ -17,10 +17,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Framework\src\Riven.Domain.EntityFrameworkCore\Riven.Domain.EntityFrameworkCore.csproj" />
-    <ProjectReference Include="..\..\..\Framework\src\Riven.Domain\Riven.Domain.csproj" />
     <ProjectReference Include="..\..\..\Framework\src\Riven.Identity.EntityFrameworkCore\Riven.Identity.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\..\..\Framework\src\Riven.UnitOfWork.EntityFrameworkCore\Riven.UnitOfWork.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\Riven.Domain.Shared\Riven.Domain.Shared.csproj" />
   </ItemGroup>
 
 

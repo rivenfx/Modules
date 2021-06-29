@@ -27,9 +27,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CCE86B0E-877
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7BABE3F2-8BBA-4EFE-8083-ADB208AD6021}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Riven.Domain.Shared", "src\Riven.Domain.Shared\Riven.Domain.Shared.csproj", "{BB6FC6A2-653D-4ACD-9416-1EC53373FCEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Riven.Domain.Shared", "src\Riven.Domain.Shared\Riven.Domain.Shared.csproj", "{BB6FC6A2-653D-4ACD-9416-1EC53373FCEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Riven.Application.Shared", "src\Riven.Application.Shared\Riven.Application.Shared.csproj", "{BD606501-66D3-4D0C-8444-3B3527AB6FF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Riven.Application.Shared", "src\Riven.Application.Shared\Riven.Application.Shared.csproj", "{BD606501-66D3-4D0C-8444-3B3527AB6FF8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Riven.EntityFrameworkCore.Shared", "src\Riven.EntityFrameworkCore.Shared\Riven.EntityFrameworkCore.Shared.csproj", "{1B8F9AE9-9368-41A9-A295-B33379E66A68}"
 EndProject

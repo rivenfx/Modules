@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Framework\src\Riven.AspNetCore.Swashbuckle\Riven.AspNetCore.Swashbuckle.csproj" />
+    <ProjectReference Include="..\..\..\Framework\src\Riven.Dependency\Riven.Dependency.csproj" />
     <ProjectReference Include="..\..\..\Framework\src\Riven.Localization\Riven.Localization.csproj" />
     <ProjectReference Include="..\..\..\Framework\src\Riven.UnitOfWork\Riven.UnitOfWork.csproj" />
   </ItemGroup>
