@@ -20,7 +20,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\Framework\src\Riven.Dependency\Riven.Dependency.csproj" />
     <ProjectReference Include="..\..\..\Framework\src\Riven.Domain\Riven.Domain.csproj" />
-    <ProjectReference Include="..\..\..\Framework\src\Riven.Identity.EntityFrameworkCore\Riven.Identity.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\..\..\Framework\src\Riven.Identity\Riven.Identity.csproj" />
     <ProjectReference Include="..\..\..\Framework\src\Riven.Localization\Riven.Localization.csproj" />
     <ProjectReference Include="..\..\..\Framework\src\Riven.UnitOfWork\Riven.UnitOfWork.csproj" />
