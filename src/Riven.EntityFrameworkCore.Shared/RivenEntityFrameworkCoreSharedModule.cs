@@ -4,6 +4,9 @@ using Riven;
 
 namespace Riven
 {
+    [DependsOn(
+       typeof(RivenDomainSharedModule)
+       )]
     public class RivenEntityFrameworkCoreSharedModule : AppModule
     {
         public override void OnPreConfigureServices(ServiceConfigurationContext context)
