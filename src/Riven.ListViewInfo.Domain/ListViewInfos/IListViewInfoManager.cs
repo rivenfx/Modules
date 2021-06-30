@@ -2,9 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
+using Riven.Dependency;
+
 namespace Riven.ListViewInfos
 {
-    public interface IListViewInfoManager
+    public interface IListViewInfoManager : ITransientDependency
     {
         IPageColumnItemManager PageColumnItemManager { get; }
 
