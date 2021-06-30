@@ -15,16 +15,20 @@ namespace Riven
         {
             context.Services.RegisterAssemblyOf<RivenEntityFrameworkCoreSharedModule>();
 
-            context.Services.Replace(new ServiceDescriptor(
-                typeof(IDomainService<>),
-                typeof(EfCoreDomainService<>),
-                ServiceLifetime.Transient
-                ));
-            context.Services.Replace(new ServiceDescriptor(
-               typeof(IDomainService<,>),
-               typeof(EfCoreDomainService<,>),
-               ServiceLifetime.Transient
-               ));
+            #region 屏蔽的代码
+            
+            //context.Services.Replace(new ServiceDescriptor(
+            //    typeof(IDomainService<>),
+            //    typeof(EfCoreDomainService<>),
+            //    ServiceLifetime.Transient
+            //    ));
+            //context.Services.Replace(new ServiceDescriptor(
+            //   typeof(IDomainService<,>),
+            //   typeof(EfCoreDomainService<,>),
+            //   ServiceLifetime.Transient
+            //   )); 
+
+            #endregion
         }
     }
 }

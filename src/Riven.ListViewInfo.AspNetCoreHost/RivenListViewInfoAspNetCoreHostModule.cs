@@ -8,7 +8,8 @@ namespace Riven
 {
     [DependsOn(
         typeof(RivenListViewInfoEntityFrameworkCoreModule),
-        typeof(RivenListViewInfoApplicationModule)
+        typeof(RivenListViewInfoApplicationModule),
+        typeof(RivenAspNetCoreHostSharedModule)
 
         )]
     public class RivenListViewInfoAspNetCoreHostModule : AppModule

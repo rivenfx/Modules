@@ -7,7 +7,8 @@ using System.Text;
 namespace Riven
 {
     [DependsOn(
-        typeof(RivenListViewInfoDomainModule)
+        typeof(RivenListViewInfoDomainModule),
+        typeof(RivenEntityFrameworkCoreSharedModule)
         )]
     public class RivenListViewInfoEntityFrameworkCoreModule : AppModule
     {

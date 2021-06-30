@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Riven
 {
-    public class EfCoreDomainService<TEntity, TPrimaryKey> : DomainService<TEntity, TPrimaryKey>
+    public abstract class EfCoreDomainService<TEntity, TPrimaryKey> : DomainService<TEntity, TPrimaryKey>
          where TEntity : class, IEntity<TPrimaryKey>
     {
         public EfCoreDomainService(IServiceProvider serviceProvider) 
@@ -20,7 +20,7 @@ namespace Riven
     }
 
 
-    public class EfCoreDomainService<TEntity> : EfCoreDomainService<TEntity, long>
+    public abstract class EfCoreDomainService<TEntity> : EfCoreDomainService<TEntity, long>
          where TEntity : class, IEntity<long>
     {
         public EfCoreDomainService(IServiceProvider serviceProvider)
