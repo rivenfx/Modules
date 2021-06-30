@@ -17,6 +17,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Riven.System.Linq.Dynamic.Core.Extensions" Version="0.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\..\Framework\src\Riven.AspNetCore.Swashbuckle\Riven.AspNetCore.Swashbuckle.csproj" />
     <ProjectReference Include="..\..\..\Framework\src\Riven.Identity.AspNetCore\Riven.Identity.AspNetCore.csproj" />
     <ProjectReference Include="..\Riven.Domain.Shared\Riven.Domain.Shared.csproj" />
