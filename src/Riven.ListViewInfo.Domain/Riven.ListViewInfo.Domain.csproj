@@ -8,9 +8,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Riven</RootNamespace>
 
-    <PackageId>Riven.Application.Shared</PackageId>
-    <Description>Riven.Application.Shared</Description>
-    <AssemblyName>Riven.Application.Shared</AssemblyName>
+    <PackageId>Riven.ListViewInfo.Domain</PackageId>
+    <Description>Riven.ListViewInfo.Domain</Description>
+    <AssemblyName>Riven.ListViewInfo.Domain</AssemblyName>
 
     <PackageTags>riven;framework;application framework;domain driven design</PackageTags>
 
