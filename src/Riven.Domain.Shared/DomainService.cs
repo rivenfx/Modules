@@ -53,7 +53,15 @@ namespace Riven
                     await this.EntityRepo.InsertAsync(entity);
                     break;
             }
+        }
 
+        public virtual async Task Create(IEnumerable<TEntity> entitys, bool createAndGetId = false)
+        {
+            await this.EntityRepo.InsertAsync(entitys);
+            if (createAndGetId)
+            {
+                await this.CurrentUnitOfWork.SaveChangesAsync();
+            }
         }
 
         public virtual async Task Update(TEntity entity)
@@ -76,12 +84,12 @@ namespace Riven
             await this.EntityRepo.DeleteAsync(o => idList.Contains(o.Id));
         }
 
-        public async Task Delete(Expression<Func<TEntity, bool>> predicate)
+        public virtual async Task Delete(Expression<Func<TEntity, bool>> predicate)
         {
             await this.EntityRepo.DeleteAsync(predicate);
         }
 
-        public async Task<bool> Exist(TPrimaryKey id)
+        public virtual async Task<bool> Exist(TPrimaryKey id)
         {
             var entity = await FindById(id);
             return entity != null;
@@ -92,6 +100,8 @@ namespace Riven
         {
             return this._serviceProvider.GetRequiredService<TService>();
         }
+
+      
     }
 
 

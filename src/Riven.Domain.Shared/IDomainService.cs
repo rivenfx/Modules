@@ -42,6 +42,15 @@ namespace Riven
         /// <returns></returns>
         Task Create(TEntity entity, bool createAndGetId = false);
 
+
+        /// <summary>
+        /// 创建
+        /// </summary>
+        /// <param name="entitys"></param>
+        /// <param name="createAndGetId">是否获取id</param>
+        /// <returns></returns>
+        Task Create(IEnumerable<TEntity> entitys, bool createAndGetId = false);
+
         /// <summary>
         /// 更新
         /// </summary>
