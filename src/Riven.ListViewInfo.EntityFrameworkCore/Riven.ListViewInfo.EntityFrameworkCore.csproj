@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+  <Import Project="..\..\version.props" />
+  <Import Project="..\..\repository_info.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Riven</RootNamespace>
+
+    <PackageId>Riven.ListViewInfo.EntityFrameworkCore</PackageId>
+    <Description>Riven.ListViewInfo.EntityFrameworkCore</Description>
+    <AssemblyName>Riven.ListViewInfo.EntityFrameworkCore</AssemblyName>
+
+    <PackageTags>riven;framework;application framework;domain driven design</PackageTags>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Riven.EntityFrameworkCore.Shared\Riven.EntityFrameworkCore.Shared.csproj" />
+    <ProjectReference Include="..\Riven.ListViewInfo.Domain\Riven.ListViewInfo.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

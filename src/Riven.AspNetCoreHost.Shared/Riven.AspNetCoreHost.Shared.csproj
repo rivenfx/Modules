@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+  <Import Project="..\..\version.props" />
+  <Import Project="..\..\repository_info.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Riven</RootNamespace>
+
+    <PackageId>Riven.AspNetCoreHost.Shared</PackageId>
+    <Description>Riven.AspNetCoreHost.Shared</Description>
+    <AssemblyName>Riven.AspNetCoreHost.Shared</AssemblyName>
+
+    <PackageTags>riven;framework;application framework;domain driven design</PackageTags>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Framework\src\Riven.AspNetCore.Localization\Riven.AspNetCore.Localization.csproj" />
+    <ProjectReference Include="..\..\..\Framework\src\Riven.AspNetCore.Modular\Riven.AspNetCore.Modular.csproj" />
+    <ProjectReference Include="..\..\..\Framework\src\Riven.AspNetCore.Swashbuckle\Riven.AspNetCore.Swashbuckle.csproj" />
+    <ProjectReference Include="..\..\..\Framework\src\Riven.AspNetCore.Uow\Riven.AspNetCore.Uow.csproj" />
+    <ProjectReference Include="..\..\..\Framework\src\Riven.Identity.AspNetCore\Riven.Identity.AspNetCore.csproj" />
+    <ProjectReference Include="..\Riven.Application.Shared\Riven.Application.Shared.csproj" />
+    <ProjectReference Include="..\Riven.Domain.Shared\Riven.Domain.Shared.csproj" />
+    <ProjectReference Include="..\Riven.EntityFrameworkCore.Shared\Riven.EntityFrameworkCore.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
