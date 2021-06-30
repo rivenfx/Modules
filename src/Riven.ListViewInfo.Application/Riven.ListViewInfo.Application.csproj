@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Riven.Application.Shared\Riven.Application.Shared.csproj" />
+    <ProjectReference Include="..\Riven.ListViewInfo.Domain\Riven.ListViewInfo.Domain.csproj" />
   </ItemGroup>
 
 </Project>

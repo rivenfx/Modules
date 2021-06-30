@@ -6,8 +6,14 @@ using System.Text;
 
 namespace Riven
 {
+    [DependsOn(
+      typeof(RivenListViewInfoDomainModule)
+      )]
     public class RivenListViewInfoApplicationModule : AppModule
     {
-
+        public override void OnPreConfigureServices(ServiceConfigurationContext context)
+        {
+            context.Services.RegisterAssemblyOf<RivenListViewInfoApplicationModule>();
+        }
     }
 }

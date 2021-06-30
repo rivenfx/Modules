@@ -15,4 +15,10 @@
     <PackageTags>riven;framework;application framework;domain driven design</PackageTags>
 
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Riven.AspNetCoreHost.Shared\Riven.AspNetCoreHost.Shared.csproj" />
+    <ProjectReference Include="..\Riven.ListViewInfo.Application\Riven.ListViewInfo.Application.csproj" />
+    <ProjectReference Include="..\Riven.ListViewInfo.EntityFrameworkCore\Riven.ListViewInfo.EntityFrameworkCore.csproj" />
+  </ItemGroup>
 </Project>
