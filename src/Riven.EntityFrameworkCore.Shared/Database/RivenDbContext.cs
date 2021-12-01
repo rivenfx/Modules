@@ -76,6 +76,18 @@ namespace Riven.Database
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            this.OnModelCreatingAfter(modelBuilder);
+        }
+
+        /// <summary>
+        /// OnModelCreating 方法执行之后
+        /// </summary>
+        /// <param name="modelBuilder"></param>
+        protected virtual void OnModelCreatingAfter(ModelBuilder modelBuilder)
+        {
+            // 启用 Filter
+            modelBuilder.ConfigureGlobalFilters(this);
         }
 
         #endregion
@@ -89,6 +101,36 @@ namespace Riven.Database
         protected virtual void ApplyAudit(ChangeTracker changeTracker)
         {
             this.Self.ApplyAudit(ChangeTracker);
+        }
+
+        #endregion
+
+
+        #region 重写SaveChange函数
+
+        public override int SaveChanges()
+        {
+            this.ApplyAudit(ChangeTracker);
+            return base.SaveChanges();
+        }
+
+        public override int SaveChanges(bool acceptAllChangesOnSuccess)
+        {
+            this.ApplyAudit(ChangeTracker);
+            return base.SaveChanges(acceptAllChangesOnSuccess);
+        }
+
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            this.ApplyAudit(ChangeTracker);
+            return base.SaveChangesAsync(cancellationToken);
+        }
+
+        public override Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess,
+            CancellationToken cancellationToken = default)
+        {
+            this.ApplyAudit(ChangeTracker);
+            return base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken);
         }
 
         #endregion
